@@ -1,0 +1,53 @@
+[
+  {
+    "title": "General Questions",
+    "questions": [
+      {
+        "question": "Where do the IEPDs come from?",
+        "answer": "These IEPDs have been built by the NIEM community for use in real-world exchanges.  Many of these IEPDs have been loaded from a few older IEPD repositories which are no longer being maintained.  Their content has not been changed."
+      },
+      {
+        "question": "Are the IEPDs conformant?",
+        "answer": "Historically, IEPD repositiories have not required validation before an IEPD could be submitted. Integrating conformance validation into this tool is a planned feature for the future.  Users should review any IEPD they wish to leverage from this tool."
+      },
+      {
+        "question": "What benefits do IEPDs have?",
+        "answer": "<div style='max-width: 600px'><div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' src='https://youtube/embed/UdCm-Gk4N1s?rel=0' allowfullscreen><\/iframe><\/div><\/div>"
+      },
+      {
+        "question": "Where can I learn more about IEPDs?",
+        "answer": "<img src='./src/assets/images/iepd-interoperability.png' width='50%' /><br>Please see the <a href='https://niem.github.io/training/' target='_blank'>NIEM Training<\/a> for more information about IEPDs."
+      }
+    ]
+  },
+  {
+    "title": "Search Questions",
+    "questions": [
+      {
+        "question": "What does the IEPD tool search?",
+        "answer": "The IEPD tool searches through metadata for the IEPDs, registries, and repositories that have been posted to it.<br><br><ol><li><b>IEPD Metadata<\/b><br>For IEPDs, this metadata comes from the either 'metadata.xml' (for IEPDs based on the MPD 1.0 specification) or 'mpd-catalog.xml' (for IEPDs based the MPD 3.0 specification).<\/li><br><li><b>Registry \/ Repository Metadata<\/b><br>For external IEPD registries and repositories, only the metadata that the contributor logs into the tool is searched - follow the external link if an external registry or repository looks promising for a more detailed search.<\/li><\/ol>"
+      }
+    ]
+  },
+  {
+    "title": "Submit-IEPD Questions",
+    "questions": [
+      {
+        "question": "I don't have a repository.  Can I post my IEPD here?",
+        "answer": "Yes, you will be able to post your full IEPD here.  It will be saved to the public GitHub repository on which this website is based."
+      },
+      {
+        "question": "I have my own repository.  Can I register my IEPD here?",
+        "answer": "Yes, you will be able to register your IEPD here.  You will need to upload your IEPD metadata file (metadata.xml or mpd-catalog.xml).  It will be saved to the public GitHub repository on which this website is based.  Your metadata file should include a URL so users can follow search hits back to your published IEPD."
+      },
+      {
+        "question": "How do I check if my IEPD is conformant?",
+        "answer": "For an IEPD based on NIEM 3.0 or a later release, upload your IEPD to <a href='https://tools.niem.gov/contesa/' target='_blank'>ConTesA (The Conformance Testing Assistant)<\/a>"
+      },
+      {
+        "question": "IEPD checklist before submitting",
+        "answer": "This is not a complete list, but some common tips are provided below to help you review an IEPD before submitting it:<br><br><ol><li><b>Check extension schemas for conformance targets<\/b><br>All extension schemas should have a conformance target that identifies which version and rule set of the NDR are being followed.  Conformance testing is not run on schemas that do not have a conformance target.  See <a href='http://niem.github.io/reference/specifications/' target='_blank'>Conformance Targets<\/a> for more information.<\/li><br><li><b>XML schema Validation<\/b><br>Using a XML tool like Oxygen, XMLSpy, or Xerces, check all schemas for validation errors.<\/li><br><li><b>NDR conformance validation<\/b><br>Upload your IEPD zip file to <a href='https://tools.niem.gov/contesa/' target='_blank'>ConTesA<\/a> to check your XML extension schemas against the NDR rules.<\/li><br><li><b>Review your IEPD artifacts<\/b><br>ConTesA only checks schemas against NDR rules.  It will be necessary to manually review your IEPD package.<br><br>It's useful to make sure that the mpd-catalog.xml has descriptive information about your exchange (), that there are helpful sample instances that show what a realistic message might look like, and that any necessary supporting documentation is included.<br><br>This package should be self-contained, providing implementers with the information that they need to use the IEPD.<br><br>See the <a href='https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html' target='_blank'>MPD Specification<\/a>, including <a href='https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#appendix_E' target='_blank'>Appendix E. Guidance for IEPD Directories (non-normative)<\/a> for more information on what an IEPD should contain and how it should be structured.<\/li><\/ol>"
+      }
+    ]
+  }
+]
