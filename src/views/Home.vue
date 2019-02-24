@@ -2,7 +2,7 @@
 <template>
   <div class="container">
 
-    <div class="alert alert-info alert-dismissible fade show">
+    <div class="alert alert-secondary alert-dismissible fade show">
       <ul>
         <li>This is a rapid prototype for a new <b>NIEM Content Hub</b>.</li>
         <li>Current Features:</li>
@@ -20,13 +20,14 @@
 
     <h2>IEPD spotlight</h2>
     <div class="container p-0">
+        <!-- style="text-shadow: 1px 1px 2px #333; padding: 30px;" -->
+        <!-- background="#ababab" -->
       <b-carousel
         id="iepdCarousel"
-        class="iepd-carousel carousel-fade"
-        style="text-shadow: 1px 1px 2px #333;"
+        class="iepd-carousel carousel-fade alert alert-info"
+        style="padding: 30px; border: 0;"
         controls
         indicators
-        background="#ababab"
         img-width="500px"
         img-height="250px"
         :interval="10000"
@@ -44,7 +45,7 @@
             </h3>
             {{ metadata.model.summary }}
             <hr>
-            <p class="carousel-description">{{ metadata.model.description}}</p>
+            <p class="carousel-description left-caption text-left">{{ metadata.model.description}}</p>
             <p><b>NIEM Release:</b> {{ metadata.data.baseNIEM }}</p>
         </b-carousel-slide>
       </b-carousel>

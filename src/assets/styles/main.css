@@ -68,13 +68,14 @@ body {
 
 .carousel-caption {
   height: 100%;
-  offset-position: 20px;
+  border: 0;
+  color: #0c5460;
 }
 
 .carousel-title a {
-  color: white;
-  text-shadow: 1px 1px 2px #333;
-  font-weight: 700;
+  color: #0c5460;
+  text-shadow: 0.5px 0.5px 0.5px #333;
+  font-weight: bold;
   text-decoration: underline;
 }
 
