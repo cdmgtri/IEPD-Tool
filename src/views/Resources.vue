@@ -46,15 +46,15 @@
         <div class="btn-group">
 
           <!-- Button to display more info -->
-          <b-btn class="btn-outline-secondary" size="sm" @click.stop="row.toggleDetails">
+          <button class="btn btn-outline-secondary btn-sm" @click.stop="row.toggleDetails">
             <i v-if="!row.detailsShowing" class="fa fa-chevron-circle-down"/>
             <i v-else class="fa fa-chevron-circle-up"/>
-          </b-btn>
+          </button>
 
           <!-- Button to open IEPD page -->
-          <b-btn class="btn-outline-secondary" size="sm" :to="'/resources/' + row.item.id">
+          <b-link class="btn btn-outline-secondary btn-sm" :to="'/resources/' + row.item.id">
             <i class="fa fa-arrow-circle-right"/>
-          </b-btn>
+          </b-link>
 
         </div>
       </template>

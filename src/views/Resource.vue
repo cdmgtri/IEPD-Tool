@@ -8,8 +8,8 @@
 
     <b-row align-h="start">
       <!-- View and download links -->
-      <b-btn class="btn-link btn-sm text-muted" target="_blank" :href="version.links.folder">View Package</b-btn>
-      <b-btn class="btn-link btn-sm text-muted" target="_blank" :href="version.links.zip" download>Download Package</b-btn>
+      <b-link class="text-muted menuOptions" target="_blank" :href="version.links.folder">View Package</b-link>
+      <b-link class="text-muted menuOptions" target="_blank" :href="version.links.zip" download>Download Package</b-link>
     </b-row>
 
     <b-row>
@@ -61,3 +61,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+.menuOptions {
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+</style>
