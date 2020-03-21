@@ -1,6 +1,6 @@
 
 module.exports = {
-  baseUrl: '/niem-content-hub/',
+  publicPath: '/niem-content-hub/',
   assetsDir: 'src/assets',
   chainWebpack: config => {
     config
