@@ -16,7 +16,7 @@
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.7.0",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "niem-model-api-specification": "github:cdmgtri/niem-model-api-specification",
     "popper.js": "^1.16.1",
     "vue": "^2.6.11",
